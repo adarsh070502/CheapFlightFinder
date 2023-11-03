@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <style>
+        .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 20%;
+        }
+        body {
+        background-image: url('./static/assets/img/bg.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+       }
+
+       .searching{
+          text-align: center;
+       }
+    </style>
+</head>
+<body>
+{% if temp=="false" %}
+    {% from 'bootstrap5/form.html' import render_form %}
+    <h2 class="searching" >After registering, hit search button below.</h2>
+    <h2 class="searching" >{{render_form(form1, novalidate=True)}} </h2>
+{% else %}
+    <h2 style="text-align: center">Successfully Sent the mails</h2>
+    <img class="center" src="https://giphy.com/clips/buzzfeed-college-finals-exam-qaLUrcwsvupNxpjVQP">
+{% endif %}
+</body>
+</html>

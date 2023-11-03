@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <style>
+      h1{
+        text-align: center;
+        color: green;
+      }
+      .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 20%;
+        }
+      body {
+        background-image: url('./static/assets/img/bg.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+</head>
+<body>
+    <h1>Successfully Registered</h1>
+    <img class="center" src="https://media.giphy.com/media/WvrQFaFR0pIbxO1XwC/giphy.gif">
+    <h3><a href="{{ url_for('home') }}">Return Home</a></h3>
+    <h3><a href="{{ url_for('search') }}">Search</a></h3>
+</body>
+</html>
